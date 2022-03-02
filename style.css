@@ -1,0 +1,327 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:white;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(125, 42, 143);
+}
+
+.colorMenu{
+    justify-content:space-between;
+}
+
+.colorMenu li a:link{
+    text-decoration: none;
+    color:rgb(125, 42, 143);
+}
+
+.colorMenu li a:hover{
+    color: white;
+}
+
+.title{
+    grid-column: 1/3;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    color:rgb(125, 42, 143);
+}
+
+.title h1{
+    font-size: 2.5rem;
+    color: rgb(125, 42, 143);
+    font-family: 'Roboto';
+}
+
+.title h1 span{
+    color: rgb(16, 195, 217);
+    font-weight:100;
+}
+
+/*.infoSub{
+    font-size:1.3rem;
+}
+
+.infoSub h2{
+    color:white;
+    padding-left: 10%;
+}
+
+.infoSub h2 span{
+    color: rgb(125, 42, 143);
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.listaBanner{
+    color: white;
+    position:relative;
+}
+
+.listaBanner ul {
+    list-style-type: none;
+    padding: 2rem;
+}
+
+.boton{
+    display:flex;
+    justify-content: center;
+}
+
+.botonInfo{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(248, 211, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonColor{
+    color: rgb(125, 42, 143);
+}
+
+.boton a:hover{
+    color: white;
+}*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 6rem;
+    background-color: rgb(248, 211, 0);
+}
+
+.iconosFooter{
+    grid-column: 1/3;
+    display: flex;
+    margin: 2rem 0rem 0.3rem 2rem;
+}
+
+.imgIconos{
+    width: 70%;
+}
+
+#infoFooter{
+    grid-column: 1/4;
+    font-size: 0.65rem;
+    color:rgb(125, 42, 143);
+    margin: 1rem;
+}
+
+.InfoDisciplinas{
+    display: flex;
+    color: rgb(125, 42, 143);
+    flex-flow: row wrap;
+}
+
+/*.iconoGymUno{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.iconoGymDos{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.iconosGym{
+    width: 10rem;
+    margin: 3rem;
+    padding: 0rem;
+}
+
+.iconoGymTres{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.iconoGymCuatro{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}*/
+
+.boxMap{
+    display:flex;
+    flex-flow: row wrap;
+    color:rgb(16, 195, 217);
+    justify-content: center;
+}
+
+#boxUno{
+    margin: 3rem;
+}
+
+#boxDos{
+    margin: 3rem;
+}
+
+#boxTres{
+    margin: 3rem;
+}
+
+/*.boxCoaches{
+    display: grid;
+    justify-content:center;
+    color:rgb(16, 195, 217);
+    margin: 3rem;
+}
+
+.imgCoaches{
+    width: 30%;
+}
+
+.textoCoaches{
+    color:rgb(125, 42, 143);
+    margin-top: 1rem;
+}
+
+.tituloCoaches{
+    margin-left: 3.5rem;
+    margin-top: 1rem ;
+}
+
+.imgPrincipalNutri{
+    width: 100%;
+}
+
+.contenedorNutri{
+    color:rgb(125, 42, 143);
+}
+
+.contenedorNutri__titulos{
+    color:rgb(16, 195, 217);
+    margin: 2%;
+}
+
+.contenedorNutri__text{
+    margin: 2%;
+}
+
+.titulosNutri{
+    color:rgb(248, 211, 0);
+    margin-bottom: 1rem;
+}*/
+
+p{
+    line-height: 1.8rem;
+}
+
+
+#fondo_texto{
+    background-image: url(./images/PRINCIPALFOND.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.botonColor{
+    background-color: rgb(125, 42, 143);
+    border-color: rgb(125, 42, 143);
+    color: white;
+}
+
+.botonColor a{
+    color: white;
+}
+
+.botonColor:hover{
+    background-color: rgb(125, 42, 143);
+}
+
+.botonColor a:hover{
+    color: rgb(248, 211, 0);
+}
+
+.textoColor{
+    color:rgb(125, 42, 143);
+}
+
+#color_ache_dos{
+    color:white;
+    font-size: 3.5rem;
+}
+
+.textoGim{
+    color:rgb(125, 42, 143);
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulosGim{
+    color:white;
+}
+
+.carouselDos{
+    display: none;
+}
+
+.carouselCuatro{
+    display: none;
+}
+
+
+@media(min-width: 0px) and (max-width: 576px){
+    #color_ache_dos{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    .imgIconos{
+        width: 80%;
+    }
+
+    .iconosFooter{
+        grid-column: 4/9;
+        display: flex;
+        
+    }
+
+    .boxMap{
+        display:flex;
+        flex-flow: row wrap;
+        color:rgb(16, 195, 217);
+        justify-content: center;
+    }
+    
+    #boxUno{
+        width: 80%;
+        margin: 2rem;
+    }
+    
+    #boxDos{
+        width: 80%;
+        margin: 2rem;
+    }
+    
+    #boxTres{
+        width: 80%;
+        margin: 2rem;
+    }
+
+    .carouselUno{
+        display:none;
+    }
+
+    .carouselTres{
+        display: none;
+    }
+
+    .carouselDos{
+        display:block;
+    }
+
+    .carouselCuatro{
+        display:block;
+    }
+
+}
