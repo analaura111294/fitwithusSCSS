@@ -56,52 +56,6 @@ a{
     font-weight:100;
 }
 
-/*.infoSub{
-    font-size:1.3rem;
-}
-
-.infoSub h2{
-    color:white;
-    padding-left: 10%;
-}
-
-.infoSub h2 span{
-    color: rgb(125, 42, 143);
-    font-size: 2em;
-    font-weight: 300;
-}
-
-.listaBanner{
-    color: white;
-    position:relative;
-}
-
-.listaBanner ul {
-    list-style-type: none;
-    padding: 2rem;
-}
-
-.boton{
-    display:flex;
-    justify-content: center;
-}
-
-.botonInfo{
-    width: 10rem;
-    height: 2.5rem;
-    background-color: rgb(248, 211, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botonColor{
-    color: rgb(125, 42, 143);
-}
-
-.boton a:hover{
-    color: white;
-}*/
 
 footer{
     display: grid;
@@ -133,32 +87,6 @@ footer{
     flex-flow: row wrap;
 }
 
-/*.iconoGymUno{
-    margin-left: 5rem;
-    margin-top: 3rem;
-}
-
-.iconoGymDos{
-    margin-left: 5rem;
-    margin-top: 3rem;
-}
-
-.iconosGym{
-    width: 10rem;
-    margin: 3rem;
-    padding: 0rem;
-}
-
-.iconoGymTres{
-    margin-left: 5rem;
-    margin-top: 3rem;
-}
-
-.iconoGymCuatro{
-    margin-left: 5rem;
-    margin-top: 3rem;
-}*/
-
 .boxMap{
     display:flex;
     flex-flow: row wrap;
@@ -178,7 +106,7 @@ footer{
     margin: 3rem;
 }
 
-/*.boxCoaches{
+.boxCoaches{
     display: grid;
     justify-content:center;
     color:rgb(16, 195, 217);
@@ -214,12 +142,13 @@ footer{
 
 .contenedorNutri__text{
     margin: 2%;
+    font-size: 0.9rem;
 }
 
 .titulosNutri{
     color:rgb(248, 211, 0);
     margin-bottom: 1rem;
-}*/
+}
 
 p{
     line-height: 1.8rem;
@@ -275,6 +204,36 @@ p{
 
 .carouselCuatro{
     display: none;
+}
+
+.imgPrincipalNutriDos{
+    display: none;
+}
+
+.carouselCinco{
+    display: block;
+}
+
+.carouselSeis{
+    display: none;
+}
+
+.card{
+    padding: 1rem;
+}
+
+.formulario{
+    padding: 2rem;
+}
+
+.btnFormulario{
+    background-color: rgb(125, 42, 143);
+    color: white;
+}
+
+.btnFormulario:hover{
+    color:rgb(16, 195, 217);
+    background-color: white;
 }
 
 
@@ -333,6 +292,23 @@ p{
 
     .carouselCuatro{
         display:block;
+    }
+
+    .imgPrincipalNutriDos{
+        display: block;
+        width: 100%;
+    }
+
+    .imgPrincipalNutri{
+        display: none;
+    }
+
+    .carouselCinco{
+        display: none;
+    }
+
+    .carouselSeis{
+        display: block;
     }
 
 }
