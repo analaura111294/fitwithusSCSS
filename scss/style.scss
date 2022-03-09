@@ -1,0 +1,316 @@
+$colorVioleta: rgb(125, 42, 143);
+$colorAmarillo: rgb(248, 211, 0);
+$colorTurquesa: rgb(16, 195, 217);
+
+
+body{
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+    color: $colorVioleta;
+}
+
+a{
+    text-decoration: none;
+    color: $colorVioleta;
+}
+
+.colorMenu{
+    background-color: $colorAmarillo;
+}
+
+.colorIconoMenu{
+    color: $colorVioleta;
+}
+
+#colorPos{
+    color: white;
+}
+
+#flexMenu{
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: $colorVioleta;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+
+.title{
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    color: $colorVioleta;
+    
+    h1{
+        font-size: 2.5rem;
+        color: $colorVioleta;
+        font-family: 'Roboto';
+        
+        span{
+            color: $colorTurquesa;
+            font-weight:100;
+        }
+    }
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 6rem;
+    background-color: $colorAmarillo;
+}
+
+.iconosFooter{
+    grid-column: 1/3;
+    display: flex;
+    margin: 2rem 0rem 0.3rem 2rem;
+}
+
+.imgIconos{
+    width: 70%;
+}
+
+#infoFooter{
+    grid-column: 1/4;
+    font-size: 0.65rem;
+    color: $colorVioleta;
+    margin: 1rem;
+}
+
+.InfoDisciplinas{
+    display: flex;
+    color: $colorVioleta;
+    flex-flow: row wrap;
+}
+
+.boxMap{
+    display:flex;
+    flex-flow: row wrap;
+    color: $colorTurquesa;
+    justify-content: center;
+}
+
+#boxUno{
+    margin: 3rem;
+}
+
+#boxDos{
+    margin: 3rem;
+}
+
+#boxTres{
+    margin: 3rem;
+}
+
+.boxCoaches{
+    display: grid;
+    justify-content:center;
+    color: $colorTurquesa;
+    margin: 3rem;
+}
+
+.imgCoaches{
+    width: 30%;
+}
+
+.textoCoaches{
+    color: $colorVioleta;
+    margin-top: 1rem;
+}
+
+.tituloCoaches{
+    margin-left: 3.5rem;
+    margin-top: 1rem ;
+}
+
+.imgPrincipalNutri{
+    width: 100%;
+}
+
+.contenedorNutri{
+    color: $colorVioleta;
+}
+
+.contenedorNutri__titulos{
+    color: $colorTurquesa;
+    margin: 2%;
+}
+
+.contenedorNutri__text{
+    margin: 2%;
+    font-size: 0.9rem;
+}
+
+.titulosNutri{
+    color: $colorAmarillo;
+    margin-bottom: 1rem;
+}
+
+p{
+    line-height: 1.8rem;
+}
+
+
+#fondo_texto{
+    background-image: url(../images/PRINCIPALFOND.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.botonColor{
+    background-color: $colorVioleta;
+    border-color: $colorVioleta;
+    color: white;
+
+    &:hover{
+        background-color: $colorVioleta;
+    }
+}
+
+.botonColor a{
+    color: white;
+
+    &:hover{
+        color: $colorAmarillo;
+    }
+}
+
+.textoColor{
+    color: $colorVioleta;
+}
+
+#color_ache_dos{
+    color:white;
+    font-size: 3.5rem;
+}
+
+.textoGim{
+    color: $colorVioleta;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulosGim{
+    color:white;
+}
+
+.carouselDos{
+    display: none;
+}
+
+.carouselCuatro{
+    display: none;
+}
+
+.imgPrincipalNutriDos{
+    display: none;
+}
+
+.carouselCinco{
+    display: block;
+}
+
+.carouselSeis{
+    display: none;
+}
+
+.card{
+    padding: 1rem;
+}
+
+.formulario{
+    padding: 2rem;
+}
+
+.btnFormulario{
+    background-color: $colorVioleta;
+    color: white;
+
+    &:hover{
+        color: $colorTurquesa;
+        background-color: white;
+    }
+}
+
+
+@media(min-width: 0px) and (max-width: 576px){
+    #color_ache_dos{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    .imgIconos{
+        width: 80%;
+    }
+
+    .iconosFooter{
+        grid-column: 4/9;
+        display: flex;
+        
+    }
+
+    .boxMap{
+        display:flex;
+        flex-flow: row wrap;
+        color: $colorTurquesa;
+        justify-content: center;
+    }
+    
+    #boxUno{
+        width: 80%;
+        margin: 2rem;
+    }
+    
+    #boxDos{
+        width: 80%;
+        margin: 2rem;
+    }
+    
+    #boxTres{
+        width: 80%;
+        margin: 2rem;
+    }
+
+    .carouselUno{
+        display:none;
+    }
+
+    .carouselTres{
+        display: none;
+    }
+
+    .carouselDos{
+        display:block;
+    }
+
+    .carouselCuatro{
+        display:block;
+    }
+
+    .imgPrincipalNutriDos{
+        display: block;
+        width: 100%;
+    }
+
+    .imgPrincipalNutri{
+        display: none;
+    }
+
+    .carouselCinco{
+        display: none;
+    }
+
+    .carouselSeis{
+        display: block;
+    }
+
+}
+
+
+
+

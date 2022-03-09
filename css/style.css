@@ -1,0 +1,218 @@
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  color: #7d2a8f; }
+
+a {
+  text-decoration: none;
+  color: #7d2a8f; }
+
+.colorMenu {
+  background-color: #f8d300; }
+
+.colorIconoMenu {
+  color: #7d2a8f; }
+
+#colorPos {
+  color: white; }
+
+#flexMenu {
+  justify-content: flex-end; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #7d2a8f; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }
+
+.title {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  color: #7d2a8f; }
+  .title h1 {
+    font-size: 2.5rem;
+    color: #7d2a8f;
+    font-family: 'Roboto'; }
+    .title h1 span {
+      color: #10c3d9;
+      font-weight: 100; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 6rem;
+  background-color: #f8d300; }
+
+.iconosFooter {
+  grid-column: 1/3;
+  display: flex;
+  margin: 2rem 0rem 0.3rem 2rem; }
+
+.imgIconos {
+  width: 70%; }
+
+#infoFooter {
+  grid-column: 1/4;
+  font-size: 0.65rem;
+  color: #7d2a8f;
+  margin: 1rem; }
+
+.InfoDisciplinas {
+  display: flex;
+  color: #7d2a8f;
+  flex-flow: row wrap; }
+
+.boxMap {
+  display: flex;
+  flex-flow: row wrap;
+  color: #10c3d9;
+  justify-content: center; }
+
+#boxUno {
+  margin: 3rem; }
+
+#boxDos {
+  margin: 3rem; }
+
+#boxTres {
+  margin: 3rem; }
+
+.boxCoaches {
+  display: grid;
+  justify-content: center;
+  color: #10c3d9;
+  margin: 3rem; }
+
+.imgCoaches {
+  width: 30%; }
+
+.textoCoaches {
+  color: #7d2a8f;
+  margin-top: 1rem; }
+
+.tituloCoaches {
+  margin-left: 3.5rem;
+  margin-top: 1rem; }
+
+.imgPrincipalNutri {
+  width: 100%; }
+
+.contenedorNutri {
+  color: #7d2a8f; }
+
+.contenedorNutri__titulos {
+  color: #10c3d9;
+  margin: 2%; }
+
+.contenedorNutri__text {
+  margin: 2%;
+  font-size: 0.9rem; }
+
+.titulosNutri {
+  color: #f8d300;
+  margin-bottom: 1rem; }
+
+p {
+  line-height: 1.8rem; }
+
+#fondo_texto {
+  background-image: url(../images/PRINCIPALFOND.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+
+.botonColor {
+  background-color: #7d2a8f;
+  border-color: #7d2a8f;
+  color: white; }
+  .botonColor:hover {
+    background-color: #7d2a8f; }
+
+.botonColor a {
+  color: white; }
+  .botonColor a:hover {
+    color: #f8d300; }
+
+.textoColor {
+  color: #7d2a8f; }
+
+#color_ache_dos {
+  color: white;
+  font-size: 3.5rem; }
+
+.textoGim {
+  color: #7d2a8f;
+  font-family: 'Roboto', sans-serif; }
+
+.titulosGim {
+  color: white; }
+
+.carouselDos {
+  display: none; }
+
+.carouselCuatro {
+  display: none; }
+
+.imgPrincipalNutriDos {
+  display: none; }
+
+.carouselCinco {
+  display: block; }
+
+.carouselSeis {
+  display: none; }
+
+.card {
+  padding: 1rem; }
+
+.formulario {
+  padding: 2rem; }
+
+.btnFormulario {
+  background-color: #7d2a8f;
+  color: white; }
+  .btnFormulario:hover {
+    color: #10c3d9;
+    background-color: white; }
+
+@media (min-width: 0px) and (max-width: 576px) {
+  #color_ache_dos {
+    font-size: 2rem; }
+  p {
+    font-size: 0.8rem; }
+  .imgIconos {
+    width: 80%; }
+  .iconosFooter {
+    grid-column: 4/9;
+    display: flex; }
+  .boxMap {
+    display: flex;
+    flex-flow: row wrap;
+    color: #10c3d9;
+    justify-content: center; }
+  #boxUno {
+    width: 80%;
+    margin: 2rem; }
+  #boxDos {
+    width: 80%;
+    margin: 2rem; }
+  #boxTres {
+    width: 80%;
+    margin: 2rem; }
+  .carouselUno {
+    display: none; }
+  .carouselTres {
+    display: none; }
+  .carouselDos {
+    display: block; }
+  .carouselCuatro {
+    display: block; }
+  .imgPrincipalNutriDos {
+    display: block;
+    width: 100%; }
+  .imgPrincipalNutri {
+    display: none; }
+  .carouselCinco {
+    display: none; }
+  .carouselSeis {
+    display: block; } }
