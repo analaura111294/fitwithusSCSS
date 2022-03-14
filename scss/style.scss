@@ -55,6 +55,10 @@ a{
     }
 }
 
+@mixin flex{
+    display: flex;
+}
+
 footer{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -63,8 +67,8 @@ footer{
 }
 
 .iconosFooter{
+    @include flex;
     grid-column: 1/3;
-    display: flex;
     margin: 2rem 0rem 0.3rem 2rem;
 }
 
@@ -79,14 +83,8 @@ footer{
     margin: 1rem;
 }
 
-.InfoDisciplinas{
-    display: flex;
-    color: $colorVioleta;
-    flex-flow: row wrap;
-}
-
 .boxMap{
-    display:flex;
+    @include flex;
     flex-flow: row wrap;
     color: $colorTurquesa;
     justify-content: center;
@@ -138,12 +136,14 @@ footer{
     margin: 2%;
 }
 
-.contenedorNutri__text{
+.contenedorNutri__titulos--text{
+    @extend .contenedorNutri;
     margin: 2%;
     font-size: 0.9rem;
 }
 
-.titulosNutri{
+.contenedorNutri--titulosNutri{
+    @extend .contenedorNutri;
     color: $colorAmarillo;
     margin-bottom: 1rem;
 }
@@ -178,18 +178,18 @@ p{
     }
 }
 
-.textoColor{
-    color: $colorVioleta;
+$colores_textos:(textoColor: $colorVioleta, textoGim: $colorVioleta);
+
+@each $clave, $valor in $colores_textos{
+    .#{$clave} {
+        color: $valor;
+        font-family: 'Roboto';
+    }
 }
 
 #color_ache_dos{
     color:white;
     font-size: 3.5rem;
-}
-
-.textoGim{
-    color: $colorVioleta;
-    font-family: 'Roboto', sans-serif;
 }
 
 .titulosGim{
